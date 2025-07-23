@@ -16,23 +16,14 @@
             object-fit: cover;
             /* crop/contain as needed */
         }
-         .navbar {
-      position: fixed; /* Make it stay on top */
-      top: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      z-index: 1000; /* Keep it above other elements */
-    }
+         
     </style>
 
 </head>
 
 <body class="bg-black">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4    " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary    " data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#carouselExampleCaptions">Coding </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -61,9 +52,9 @@
         </div>
     </nav>
 
-
+   
     <!-- carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide ">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -325,8 +316,8 @@
                 <div class="col-md-4">
                     <label for="inputState" class="form-label   text-light">State</label>
                     <select id="inputState" class="form-select">
-                        <option selected>Uttarakhand</option>
-                        <option>Uttar Pradesh</option>
+                        <option >Uttarakhand</option>
+                        <option selected>Uttar Pradesh</option>
                         <option>Andhra Pradesh</option>
                         <option>Gujarat</option>
                         <option>Punjab</option>

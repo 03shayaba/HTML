@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .Page-in {
+            background-image: url('./bottom-rept.jpg');
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            width: 100%;
+            float: left;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #4d5051;
+            background-color: #d6d6d6;
+            background-image: url('./top-rept.jpg');
+            background-repeat: repeat-x;
+            background-position: left top;
+            margin: 0px;
+        }
+
+        .page {
+            width: 1000px;
+            margin: 0px auto;
+        }
+
+        div {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        .main,
+        .header {
+            width: 1000px;
+            float: left;
+        }
+
+        .header-top {
+            background-image: url('./header-top.jpg');
+            background-repeat: no-repeat;
+            background-position: left top;
+            width: 1000px;
+            height: 81px;
+            float: left;
+        }
+
+        .header-top h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 55px;
+            font-weight: normal;
+            line-height: 81px;
+            color: #FFFFFF;
+            margin-left: 115px;
+        }
+
+        .header-top h1 span {
+            color: #000000;
+        }
+
+        .header-bottom {
+            background-image: url('./header.jpg');
+            background-repeat: no-repeat;
+            background-position: left top;
+            width: 1000px;
+            height: 257px;
+            float: left;
+        }
+
+        .header-bottom h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: normal;
+            color: #000000;
+            margin-top: 92px;
+            margin-left: 27px;
+        }
+
+       .topmenu{
+        background-image: url('./menu-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: left top;
+            width: 1000px;
+            height: 74px;
+            float: left;
+       }
+       .topmenu ul {
+    height: 74px;
+    margin-left: 64px;
+    list-style-type: none;
+}
+topmenu ul li {
+    background-image: url(./devider.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 74px;
+    float: left;
+    padding-right: 13px;
+    padding-left: 13px;
+} */
+ body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4d5051;
+	background-color: #d6d6d6;
+	background-image: url(./top-rept.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	margin: 0px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, input, textarea {
+	padding: 0px;
+	margin: 0px;
+}
+a {
+	color: #072FCF;
+	text-decoration: underline;
+}
+a:hover {
+	color: #072FCF;
+	text-decoration: none;
+}
+.page-in {
+	background-image: url(./bottom-rept.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	width: 100%;
+	float: left;
+}
+.page {
+	width: 1000px;
+	margin: 0px auto;
+}
+.main, .header {
+	width: 1000px;
+	float: left;
+ }
+.header-top {
+	background-image: url(./header-top.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 1000px;
+	height: 81px;
+	float: left;
+}
+.header-top h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 55px;
+	font-weight: normal;
+	line-height: 81px;
+	color: #FFFFFF;
+	margin-left: 115px;
+}
+.header-top h1 span {
+	color: #000000;
+}
+.header-bottom {
+	background-image: url(./header.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 1000px;
+	height: 257px;
+	float: left;
+}
+.header-bottom h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #000000;
+	margin-top: 92px;
+	margin-left: 27px;
+}
+.topmenu {
+	background-image: url(./menu-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 1000px;
+	height: 74px;
+	float: left;
+}
+.topmenu ul {
+	height: 74px;
+	margin-left: 64px;
+	list-style-type: none;
+}
+.topmenu ul li {
+	background-image: url(./devider.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 74px;
+	float: left;
+	padding-right: 13px;
+	padding-left: 13px;
+}
+.topmenu ul li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 74px;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	height: 74px;
+	float: left;
+	padding-left: 15px;
+}
+.topmenu ul li a span {
+	display: block;
+	height: 74px;
+	float: left;
+	padding-right: 35px;
+	cursor: pointer;
+}
+.topmenu ul li a:hover {
+	background-image: url(./menu-left.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #000000;
+}
+.topmenu ul li a:hover span {
+	background-image: url(./menu-right.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	color: #000000;
+}
+.content {
+	background-color: #FFFFFF;
+	background-image: url(./body-top.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 952px;
+	float: left;
+	padding: 30px 24px 0px 24px;
+}
+.content-left {
+	background-image: url(./vline.jpg);
+	background-repeat: repeat-y;
+	background-position: right top;
+	width: 621px;
+	float: left;
+	padding-right: 21px;
+}
+.row1 {
+	width: 621px;
+	float: left;
+}
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.title span {
+	color: #82ab01;
+}
+.copyright {
+	border: 0px;
+	height: 1px;
+	width: 1px;
+}
+ul.list1 {
+	margin-top: 5px;
+	margin-left: 25px;
+	list-style-image: url(./bullet.jpg);
+}
+ul.list1 li {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.row2 {
+	background-image: url(./section-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 591px;
+	height: 233px;
+	float: left;
+	padding: 15px 15px 0px 15px;
+}
+.subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #171817;
+	margin-bottom: 10px;
+}
+.subtitle span {
+	color: #607e00;
+}
+a.more {
+	font-size: 12px;
+	line-height: 30px;
+	color: #282828;
+	text-decoration: none;
+	background-image: url(./more-btn.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-align: center;
+	display: block;
+	width: 83px;
+	height: 38px;
+	margin-top: 10px;
+}
+a.more:hover {
+	color: #607e00;
+}
+.content-right {
+	width: 310px;
+	float: right;
+	padding-top: 7px;
+}
+.mainmenu, .contact {
+	width: 310px;
+	float: right;
+}
+.sidebar1 {
+	font-size: 18px;
+	line-height: 50px;
+	color: #FFFFFF;
+	background-image: url(./sidebar1.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 50px;
+	padding-left: 60px;
+	margin-bottom: 15px;
+}
+.mainmenu ul {
+	margin-bottom: 15px;
+	list-style-type: none;
+}
+.mainmenu ul li {
+	background-image: url(./bullet.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+}
+.mainmenu ul li a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.mainmenu ul li a:hover {
+	text-decoration: none;
+}
+.sidebar2 {
+	font-size: 18px;
+	line-height: 50px;
+	color: #FFFFFF;
+	background-image: url(./sidebar2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 50px;
+	padding-left: 60px;
+	margin-bottom: 10px;
+}
+.contact-detail {
+	background-color: #dcdcdc;
+	width: 280px;
+	float: right;
+	padding: 15px;
+}
+.contact-detail p {
+	margin-bottom: 10px;
+}
+.green {
+	color: #003300;
+}
+.footer {
+	line-height: 69px;
+	background-image: url(./footer.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 952px;
+	height: 69px;
+	float: left;
+	padding: 23px 24px 0px 24px;
+}
+.footer p {
+	font-size: 11px;
+	color: #FFFFFF;
+	float: left;
+}
+.footer a {
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: none;
+}
+.footer ul {
+	float: right;
+}
+.footer ul li {
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFFFFF;
+}
+.footer ul li a {
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer ul li a:hover {
+	text-decoration: underline;
+} 
+
+    </style>
+</head>
+
+<body>
+    <div class="page-in">
+        <div class="page">
+            <div class="main">
+                <div class="header">
+                    <div class="header-top">
+                        <h1>Company <span>Name</span></h1>
+                    </div>
+                    <div class="header-bottom">
+                        <h2>Lorem ipsum dolor sit amet.
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            
+                        </h2>
+                    </div>
+                    <div class="topmenu">
+                        <ul>
+                           <li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="index.html"><span>Home</span></a></li>
+                            <li><a href="#"><span>About us</span></a></li>
+                            <li><a href="#"><span>What's new</span></a></li>
+                            <li><a href="#"><span>Services</span></a></li>
+                            <li><a href="#"><span>Content</span></a></li>
+                            <li><a href="#"><span>Resources</span></a></li>
+                            <li><a href="#"><span>Links</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-left">
+                        <div class="row1">
+                            <h1 class="title">Welcome to <span>Our site</span></h1>
+                            <p><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum in ipsa, quam
+                                    labore aliquam, quis illo vitae voluptate, animi modi nobis explicabo? Porro
+                                    assumenda vero aperiam illum exercitationem iste quod quos ad similique, sapiente
+                                    officiis totam minima, voluptas perspiciatis nam impedit facilis veniam tempora
+                                    repellat temporibus, excepturi provident atque? Eveniet.</strong></p>
+                            <p></p>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release </p>
+
+                            <ul class="list1">
+                                <li>of letraset sheets containing</li>
+                                <li> Lorem ipsum dolor sit amet.</li>
+                                <li>"and more recently with desktop"</li>
+                            </ul>
+                            <p><br>
+                                <strong>Lorem ipsum dolor sit.</strong>
+                                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled it.<br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="row2">
+                            <h2 class="subtitle">About <span>us</span></h2>
+                            <p>
+                                <strong>Lorem Ipsum is simply dummy text</strong>
+                                of the printing and typesetting industry. Lorem Ipsum has been the aaaa industry's
+                                standard dummy text ever since the 1500s, ass as dwhen an unknasdown printer took a
+                                galley of type and scrambled it to make a type speascimen book. <br>
+                                It has survived not only five centuries, but also the leap into electronic
+                                typesetting.and scrambled it to make a type speascimen book.
+                            </p>
+                            <p><strong>Lorem Ipsum is simply dummy text</strong>" of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book."
+                            </p>
+                            <p align="right">
+                                <a href="#" class="more">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="mainmenu">
+                            <h2 class="sidebar"> Main Menu</h2>
+                            <ul>
+                                <li><a href="#">this is a dummy link 1</a></li>
+                                <li><a href="#">this is a dummy link 2</a></li>
+                                <li><a href="#">this is a dummy link 3</a></li>
+                                <li><a href="#">this is a dummy link 4</a></li>
+                                <li><a href="#">this is a dummy link 5</a></li>
+                                <li><a href="#">this is a dummy link 6</a></li>
+                                <li><a href="#">this is a dummy link 7</a></li>
+                                <li><a href="#">this is a dummy link 8</a></li>
+                                <li><a href="#">this is a dummy link 9</a></li>
+                                <li><a href="#">this is a dummy link 10</a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h2 class="sidebar2">Contact</h2>
+                            <p class="green"><strong>Lorem Ipsum is simply dummy text</strong></p>
+                            <p><strong>Address: </strong>Lorem ipsum dolor sit amet consectetur.
+                                <br>
+                            </p>
+                            <p><strong>Email: </strong>when an unknown printer took a
+                            </p>
+                            <p><strong>Phone: </strong>00-0000000000
+                                000-0000-0000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p></p>
+                    <ul>
+                        <li style="border-left: medium none;">…</li>
+                        <li><a href="#"><span>About us</span></a></li>
+                        <li><a href="#"><span>What's new</span></a></li>
+
+                        <li><a href="#"><span>Services</span></a></li>
+                        <li><a href="#"><span>Contact</span></a></li>
+                        <li><a href="#"><span>Resources</span></a></li>
+                        <li style="padding-right:0px;"><a href="#"><span>Links</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

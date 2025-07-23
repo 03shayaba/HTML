@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container{
+            background-color:rgb(49, 89, 9);
+            margin:4px;
+            padding:2px;
+            display:flex;
+            height:1200px;
+            flex-direction:row; 
+            /* flex-wrap:wrap; */
+            justify-content:start;
+            /* flex-direction:column;
+            justify-content:center; */
+            align-items: start;
+            align-content:center;
+
+        }
+        .box{
+            height:200px;
+            width:200px;
+            margin:1 px;
+            padding:2px;
+            border:2px solid black;
+        }
+        #box1{
+           background-color: red; 
+           order:4;
+           /* flex-shrink: 4; */
+           flex-grow: 1;
+        }
+         #box2{
+           background-color:pink ; 
+        }
+         #box3{
+           background-color: rgb(41, 41, 130); 
+        }
+         #box4{
+           background-color: rgb(179, 117, 3); 
+           flex-basis: 400px;
+           order:-1; /*it will appear on starting */
+        }
+        #box5{
+           background-color: rgb(16, 146, 222); 
+        }
+            </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">item1</div>
+        <div class="box" id="box2">item2</div>
+        <div class="box" id="box3">item3</div>
+        <div class="box" id="box4">item4</div>
+        <!-- <div class="box" id="box5"></div> -->
+    </div>
+</body>
+</html>

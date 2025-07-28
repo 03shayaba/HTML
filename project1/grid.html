@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -76,19 +82,26 @@
             grid-area: 1/1/1/5
         }
 
+
+
         /* media query for responsive  */
         @media (max-width: 660px) {
             .grid-container {
+              
+                gap: 10px;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(5, 1fr);
                 background-color: rgb(111, 191, 137);
+               
+
             }
 
-           
 
 
             .special-item {
+
+
                 grid-area: 2/1/4/3;
             }
 
@@ -97,10 +110,11 @@
             }
 
             .grid-item {
+
                 background-color: rgb(147, 35, 175);
-                padding-left: 50px;
-                padding-right: 50px;
-                margin-left: 150px;
+                padding-left: 100px;
+                padding-right: 100px;
+
                 text-align: center;
             }
 
@@ -110,6 +124,7 @@
 
             /* Optional: Reset or simplify grid-areas for mobile */
             .grid-item-container {
+                gap: 10px;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(20, 1fr);
@@ -118,9 +133,9 @@
 
             .grid-item1 {
                 background-color: rgb(171, 23, 23);
-                padding: 20px;
-                margin-left: 150px;
-                margin-right: 0px;
+                padding-left: 100px;
+                padding-right: 100px;
+
                 text-align: center;
             }
 
@@ -156,21 +171,22 @@
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="grid-item item ">Item </div>
-        <div class="grid-item  second-item">Item 1</div>
-        <div class="grid-item special-item">Special Item</div>
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="grid-item item ">Item </div>
+            <div class="grid-item  second-item">Item 1</div>
+            <div class="grid-item special-item">Special Item</div>
+        </div>
+        <div class="grid-item-container">
+            <div class="grid-item1 new-container1">Cards1</div>
+            <div class="grid-item1 new-container2 ">Cards2</div>
+            <div class="grid-item1 new-container3">Cards3</div>
+            <div class="grid-item1 new-container4">Cards4</div>
+            <div class="grid-item1 new-container5">Cards5</div>
+            <div class="grid-item1 new-container6">Cards6</div>
+            <div class="grid-item1 new-container7">Footer</div>
+        </div>
     </div>
-    <div class="grid-item-container">
-        <div class="grid-item1 new-container1">Cards1</div>
-        <div class="grid-item1 new-container2 ">Cards2</div>
-        <div class="grid-item1 new-container3">Cards3</div>
-        <div class="grid-item1 new-container4">Cards4</div>
-        <div class="grid-item1 new-container5">Cards5</div>
-        <div class="grid-item1 new-container6">Cards6</div>
-        <div class="grid-item1 new-container7">Footer</div>
-    </div>
-
 </body>
 
 </html>

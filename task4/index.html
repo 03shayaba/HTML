@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(248, 246, 247);
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(215, 239, 246);
+            width: 100vw;
+            height: 5rem;
+            box-shadow: 0.1px 3px 9px rgb(53, 53, 53);
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px 100px
+        }
+
+        ul li {
+
+            list-style-type: none;
+        }
+
+        li a {
+            color: black;
+            font-weight: lighter;
+            font-size: 1.4rem;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        li a span {
+            color: black;
+
+        }
+
+        .welcome {
+            margin-top: 10px;
+            margin-left: 90px;
+            margin-right: 90px;
+            background-color: rgb(209, 232, 180);
+            border: 1px solid gray;
+            border-radius: 50px;
+            height: 100px;
+            text-align: center;
+            padding: 30px 50px
+        }
+
+        main {
+            width: auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            height: 410px;
+        }
+
+        .content-left {
+            justify-content: center;
+            align-items: center;
+            float: left;
+            height: 400px;
+            width: 50%;
+            background-color: rgb(245, 247, 222);
+            border: 10px solid rgb(235, 246, 197);
+
+        }
+
+        .content-right {
+            float: right;
+            height: 400px;
+            width: 50%;
+            background-color: rgb(208, 185, 195);
+
+        }
+
+        .content-left img {
+            height: 370px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 0px;
+        }
+
+        .content-left img:hover {
+            background-color: white;
+            cursor: pointer;
+            box-shadow: 0.1px 0px 9px rgb(53, 53, 53);
+            ;
+        }
+
+        .content-right {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            font-weight: lighter;
+            padding: 20px 20px;
+            overflow: hidden;
+        }
+        .content-right .white-content{
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        footer {
+            padding: 30px 0px;
+            background-color: grey;
+        }
+
+        .bottoem-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .last {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"><span>Home</span></a></li>
+            <li><a href="#"><span>About Us</span></a></li>
+            <li><a href="#"><span>Contact</span></a></li>
+            <li><a href="#"><span>Services</span></a></li>
+        </ul>
+    </nav>
+    <section class="welcome">
+        <h1>welcome to this new revision journy of code from day 1 to day 100</h1>
+    </section>
+    <main>
+        <div class="content-left">
+            <img src="butterfly.webp" alt="">
+        </div>
+        <div class="content-right">
+            <div class="white-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque asperiores unde repellendus animi omnis
+                distinctio numquam enim magnam explicabo, saepe quidem porro accusantium praesentium neque illo veniam
+                consequuntur impedit sunt qui aliquid. Facere eum dicta laborum, molestias ipsam accusantium magni alias
+                placeat vitae sed.<br> Temporibus minima dicta, minus doloribus odit voluptate assumenda consectetur
+                labore?
+                Hic iusto voluptate, et laudantium fuga, ducimus ullam, perspiciatis saepe repellat totam iure facilis?
+                Repudiandae eos reiciendis, odio molestiae nulla fuga necessitatibus accusantium perferendis eius
+                consequuntur esse quisquam doloremque cum! Harum cumque, aliquam et quibusdam ut totam, saepe provident,
+                ipsum quos nam magni consequatur porro non sapiente unde recusandae consequuntur possimus ullam
+                asperiores assumenda accusantium corporis quasi fugiat inventore! Aspernatur nam ullam sunt excepturi
+                exercitationem sint aperiam quam, modi iusto harum nostrum asperiores quo rem sapiente explicabo soluta
+                quas voluptate incidunt! Eveniet, modi libero, ad voluptatum in earum vero temporibus, cupiditate
+                quaerat iure hic veniam! Velit reiciendis suscipit soluta qui ea in enim eum, inventore odio placeat
+                nobis, esse odit temporibus deserunt cumque culpa error ex ducimus, id possimus ipsam hic porro. Numquam
+                asperiores iure consectetur? Laudantium adipisci eius omnis, cum molestiae reprehenderit quas labore
+                maxime neque, asperiores nihil dignissimos iusto veritatis ad in natus harum debitis praesentium
+                perspiciatis explicabo maiores quae modi vitae. Ipsum tenetur dignissimos mollitia delectus minima
+                dolorum  .</p>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <ul class="bottoem-content">
+            <li class="last">Contact No :000 0000 000</li>
+            <li class="last">Address:lucknow balagang</li>
+            <li class="last">copyright@shayaba</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

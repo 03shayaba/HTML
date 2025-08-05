@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #d6d6d6;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+        }
+
+        .header-top {
+            background-image: url("top-rept.jpg");
+            background-repeat: repeat-x;
+            max-height: 180px;
+            position: relative;
+            width: 100%;
+
+            color: white;
+        }
+
+        .header-top h1 {
+            background-image: url("header-top.jpg");
+            margin-left: 250px;
+            bottom: 60px;
+            height: 300px;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+
+        }
+
+        .logo {
+
+            font-size: 3.5rem;
+            font-weight: lighter;
+            padding-left: 110px;
+
+
+        }
+
+
+        .logo span {
+            color: black;
+
+
+        }
+
+        .topmenu li {
+            list-style: none;
+            height: 74px;
+            margin-left: 64px;
+
+        }
+
+        .topmenu ul li {
+            background-image: url(./devider.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            height: 74px;
+            float: left;
+
+        }
+
+        .topmenu ul li a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 74px;
+            color: #FFFFFF;
+            text-decoration: none;
+            display: block;
+            height: 74px;
+            float: left;
+            padding-left: 15px;
+        }
+
+        .topmenu ul li a span {
+            display: block;
+            height: 74px;
+            float: left;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+
+        .topmenu ul li a:hover {
+            background-image: url(./menu-left.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            color: #000000;
+        }
+
+        .topmenu ul li a:hover span {
+            background-image: url(./menu-right.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            color: #000000;
+        }
+
+        .header {
+            position: relative;
+            background-image: url("header.jpg");
+            margin-left: 250px;
+            bottom: 100px;
+            height: 300px;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+
+
+        }
+
+        .header h2 {
+            text-align: start;
+            padding-top: 80px;
+            padding-left: 20px;
+            font-weight: lighter;
+        }
+
+        .topmenu {
+            background-image: url("menu-bg.jpg");
+            background-repeat: no-repeat;
+            margin-left: 250px;
+            width: 1000px;
+            height: 80px;
+            position: relative;
+            bottom: 140px;
+        }
+
+        .bottom-menu {
+            width: 1000px;
+            margin-left: 250px;
+            position: relative;
+            bottom: 120px;
+            z-index:2;
+            border-radius: 10px;
+            background-color: white;
+            padding-top: 20px;
+            height: 600px;
+
+        }
+
+        .text-content ul li {
+            list-style: none;
+        }
+
+        .top h2 {
+            padding-left: 20px;
+            font-weight: lighter;
+            padding-bottom: 30px;
+        }
+
+        .top span {
+            color: #82ab01;
+        }
+
+        .topmenu,
+        .header,
+        .bottom-menu {
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .text-content p {
+            opacity: 0.8;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.8rem;
+            padding-bottom: 5px;
+        }
+
+        .text-content {
+            padding-right: 20px;
+            padding-left: 25px;
+        }
+
+        .text-content p span {
+            font-weight: bold;
+
+        }
+
+        .text-content ul {
+            padding-bottom: 5px;
+        }
+
+        .text-content ul li {
+            background-image: url("bullet.jpg");
+            background-repeat: no-repeat;
+            padding-left: 10px;
+
+            padding-bottom: 5px;
+            font-weight: lighter;
+            font-size: 0.8rem;
+        }
+
+        .row1 {
+            width: 621px;
+            float: left;
+
+        }
+
+        .row2 {
+            background-image: url("section-bg.jpg");
+            background-repeat: no-repeat;
+            background-position: left top;
+            width: 591px;
+            height: 253px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 20px;
+            padding-left: 20px;
+            padding-top: 15px;
+        }
+
+        .row2 h2 {
+            font-weight: lighter;
+            padding-bottom: 5px;
+        }
+
+        .row2 h2 span {
+            color: #82ab01;
+        }
+
+        .row2 p span {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+
+        }
+
+        .row2 p {
+            font-weight: lighter;
+            opacity: 0.8;
+            font-size: 0.9rem;
+            padding-bottom: 10px;
+
+        }
+
+        a.more {
+            font-size: 12px;
+            line-height: 30px;
+            color: #282828;
+            text-decoration: none;
+            background-image: url("more-btn.jpg");
+            background-repeat: no-repeat;
+            background-position: left top;
+            text-align: center;
+            display: block;
+            width: 83px;
+            height: 38px;
+            margin-top: 10px;
+        }
+
+        .content-right {
+            width: 380px;
+            float: right;
+
+        }
+
+        .content-left {
+            width: 620px;
+            float: left;
+        }
+
+        .main-menu {
+            width: 350px;
+            float: right;
+
+        }
+
+        .content-right {
+            background-image: url("vline.jpg");
+            background-repeat: repeat-y
+        }
+
+        .main-menu h1 {
+            color: white;
+            padding-left: 56px;
+            font-size: 25px;
+            padding-top: 10px;
+        }
+
+        .menu-img {
+            background-image: url("sidebar1.jpg");
+            background-repeat: no-repeat;
+            padding-bottom: 13px;
+            margin-right: 10px;
+
+        }
+
+        .main-menu ul li a {
+            /* text-decoration: none; */
+            color: black;
+            margin-top: 5px;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+
+        }
+
+        .main-menu ul li {
+            background-image: url("bullet.jpg");
+            background-repeat: no-repeat;
+            list-style: none;
+        }
+
+        .contact {
+            width: 350px;
+            float: right;
+        }
+
+        .sidebar2 {
+            background-image: url("sidebar2.jpg");
+            background-repeat: no-repeat;
+            padding-bottom: 25px;
+        }
+
+        .contact h2 {
+            padding-left: 60px;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .contact-detail {
+            background-color: #dcdcdc;
+            /* padding:20px; */
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        .contact-detail .green {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            opacity: 0.8;
+
+        }
+
+        .contact-detail p {
+            opacity: 0.8;
+            font-weight: lighter;
+            padding-top: 5px;
+        }
+
+       .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    background-image: url("bottom-rept.jpg");
+    background-repeat: repeat-x;
+    position: relative;
+    bottom: 130px;
+    z-index: 1;
+    padding: 40px 50px;
+}
+
+.left-text h1 {
+    font-size: small;
+    color: white;
+    padding-left: 220px;
+    font-weight: lighter;
+    margin: 0;
+}
+.right-text{
+    padding-right:220px;
+}
+
+.right-text ul {
+    list-style: none;
+    display: flex;
+    
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.right-text ul li {
+    font-size: small;
+    color: white;
+    
+}
+
+@media (min-width: 768px){
+    
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-top">
+            <h1 class="logo">
+                Company <span>Name</span>
+            </h1>
+        </div>
+        <div class="header">
+            <h2>Lorem Ipsum is simply dummy text
+                <br>
+                of the typesetting industry.
+            </h2>
+        </div>
+        <div class="topmenu">
+            <ul>
+                <li><a href="#"><span>Home</span></a></li>
+                <li><a href="#"><span>About us</span></a></li>
+                <li><a href="#"><span>what's new</span></a></li>
+                <li><a href="#"><span>service</span></a></li>
+                <li><a href="#"><span>contact</span></a></li>
+                <li><a href="#"><span>Resource</span></a></li>
+                <li><a href="#"><span>Link</span></a></li>
+
+            </ul>
+
+        </div>
+        <div class="bottom-menu">
+            <div class="content-left">
+                <div class="row1">
+                    <div class="top">
+                        <h2>Welcome To <span>Our Site</span> </h2>
+                    </div>
+                    <div class="text-content">
+                        <p> <span>Lorem Ipsum is simply dummy text</span> of the printing and typesetting industry.
+                            Lorem
+                            Ipsum
+                            has been the
+                            indusstandard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and
+                            scrambleto make a type specimen book.
+                        </p>
+                        <ul>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining
+                                essentially unchanged. It was popularised in the 1960s with the release</p>
+
+                            <li>of Letraset sheets containing</li>
+                            <li>Lorem Ipsum passages,</li>
+                            <li>and more recently with desktop</li>
+                        </ul>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and scrambled it.
+                        </p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <h2> About <span>Us</span></h2>
+                    <p><span>Lorem Ipsum is simply dummy text</span>
+                        of the printing and typesetting industry. Lorem Ipsum has been the aaaa industry's standard
+                        dummy text ever since the 1500s, ass as dwhen an unknasdown printer took a galley of type and
+                        scrambled it to make a type speascimen book.
+                    </p>
+                    <p>
+                        It has survived not only five centuries, but also the leap into electronic typesetting.and
+                        scrambled it to make a type speascimen book.
+                    </p>
+                    <p>
+                        <span>Lorem Ipsum is simply dummy text</span> of the printing and typesetting industry. Lorem
+                        Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+
+                    <p align="right"><a href="#" class="more">Read More</a></p>
+
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="main-menu">
+                    <h1 class="menu-img">Main Menu</h1>
+                    <ul>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+                        <li><a href="#">this is dummy link</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2 class="sidebar2">Contact</h2>
+                    <div class="contact-detail">
+                        <p class="green"><strong>Lorem Ipsum is simply dummy text</strong></p>
+                        <p><strong>Adress :</strong> Lorem Ipsum has been the<br>
+                            dummy
+                            text the 1500s,</p>
+                        <p><strong>E-mail :</strong> &nbsp;&nbsp;&nbsp;when an unknown printer
+                            took a</p>
+                        <p><strong>Phone :</strong> &nbsp;&nbsp;&nbsp;00-0000000000<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;000-0000-0000
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="left-text">
+                <h1>
+                    © Copyright 2014. All Rights Reserved.
+                </h1>
+            </div>
+            <div class="right-text">
+                <ul>
+                    <li>Home<span>&nbsp;&nbsp;&nbsp;|</span></li>
+                    <li>About Us<span>&nbsp;&nbsp;&nbsp;|</span></li>
+                    <li>Services <span>&nbsp;&nbsp;&nbsp;|</span></li>
+                    <li>What's New <span>&nbsp;&nbsp;&nbsp;|</span></li>
+                    <li>Contact<span>&nbsp;&nbsp;&nbsp;|</span></li>
+                    <li>Resource <span>&nbsp;&nbsp;&nbsp;|</span></li>
+                    <li>link<span>&nbsp;&nbsp;&nbsp;|</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
